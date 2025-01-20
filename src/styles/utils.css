@@ -1,0 +1,50 @@
+.flow-content > * + * {
+  margin-top: var(--flow-gap, var(--spacer));
+}
+
+.text-center {
+  text-align: center;
+}
+
+.bold {
+  font-weight: var(--fw-700);
+}
+
+.ff-accent {
+  font-family: var(--ff-accent);
+  font-weight: var(--fw-200);
+  letter-spacing: -0.02em;
+}
+
+.rounded {
+  border-radius: var(--border-radius);
+}
+
+[class*='bg-'] {
+  background: var(--bg, red);
+  color: var(--fg, yellow);
+}
+
+.bg-accent {
+  --bg: var(--clr-accent-300);
+  --fg: var(--clr-neutral-900);
+}
+
+.split {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: var(--split-gap, calc(var(--spacer) * 3));
+}
+
+@media (width > 960px) {
+  .split {
+    flex-flow: row;
+    justify-content: space-between;
+    gap: var(--split-gap, var(--spacer));
+
+    > * {
+      flex-basis: 100%;
+    }
+  }
+}

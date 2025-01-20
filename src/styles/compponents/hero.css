@@ -1,0 +1,10 @@
+.hero {
+
+  .page-heading {
+    margin-block-end: 4.75rem;
+  }
+
+  p {
+    margin-block-end: 1.5rem;
+  }
+}

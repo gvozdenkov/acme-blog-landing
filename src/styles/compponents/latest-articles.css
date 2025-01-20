@@ -1,0 +1,23 @@
+.latest-aricles__list {
+  display: grid;
+  row-gap: 5rem;
+  grid-template-rows: min-content 1fr min-content;
+  margin: 0;
+}
+
+@media (width > 750px) {
+  .latest-aricles {
+    --section-padding: 4.5rem 7rem;
+  }
+
+  .latest-aricles__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(239px, 100%), 1fr));
+    gap: 1rem 2.5rem;
+
+    > article {
+      grid-template-rows: subgrid;
+      grid-row: span 4;
+    }
+  }
+}

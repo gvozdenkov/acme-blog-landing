@@ -1,0 +1,41 @@
+.primary-header {
+  background: no-repeat center / cover url(../../images/hero.jpg);
+  min-height: 304px;
+  padding: 2.5rem;
+}
+
+.primary-nav {
+  display: none;
+}
+
+@media (width > 700px) {
+  .primary-header {
+    min-height: 456px;
+
+    /* display: flex;
+    justify-content: space-between;
+    align-items: flex-start; */
+  }
+
+  .primary-nav {
+    display: block;
+  }
+
+  .primary-nav__list {
+    display: flex;
+    gap: 2.5rem;
+
+    a {
+      font-family: var(--ff-accent);
+      font-size: var(--fs-300);
+      font-weight: var(--fw-300);
+      line-height: 1.25;
+      text-decoration: none;
+      color: var(--clr-neutral-900);
+    }
+
+    > li.selected a {
+      font-weight: var(--fw-700);
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.page-heading {
+  font-family: var(--ff-accent);
+  font-size: var(--fs-900);
+  font-weight: var(--fw-200);
+  line-height: 1.18;
+  letter-spacing: -0.02em;
+}
+
+.section-heading {
+  font-size: var(--fs-600);
+  line-height: 1.17;
+
+  > h2 {
+    color: var(--clr-neutral-400);
+    font-size: inherit;
+  }
+
+  > p {
+    font-size: inherit;
+    margin-block-end: 5rem;
+  }
+}
+
+.paragraph-l {
+  font-size: var(--fs-600);
+}
+
+.paragraph-md {
+  font-size: var(--fs-500);
+}

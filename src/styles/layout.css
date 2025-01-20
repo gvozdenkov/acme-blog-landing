@@ -1,0 +1,76 @@
+.main-grid {
+  --column-count: 12;
+  --gutter: 0.5rem;
+  --page: 1rem;
+  --page-max-width: 1232px;
+  --content-max-width: 800px;
+
+  --grid-col-max-width: calc(var(--content-max-width) / var(--column-count));
+
+  display: grid;
+  grid-template-columns:
+    [fullbleed-start]
+    minmax(var(--gutter), 1fr)
+    [page-start]
+    var(--page)
+    [content-start]
+    repeat(var(--column-count), minmax(0, var(--grid-col-max-width)))
+    [content-end]
+    var(--page)
+    [page-end]
+    minmax(var(--gutter), 1fr)
+    [fullbleed-end];
+}
+
+.main-grid > * {
+  grid-column: fullbleed;
+
+  display: grid;
+  grid-template-columns: subgrid;
+}
+
+.main-grid > * > * {
+  grid-column: content;
+}
+
+.main-grid > header,
+.main-grid > .latest-aricles {
+  grid-column: page;
+}
+
+@media (width > 750px) {
+  .main-grid {
+    --gutter: 1.5rem;
+    --page: 5rem;
+  }
+
+  .even-columns > * {
+    grid-column: span var(--col-width);
+  }
+
+  .even-columns > :first-child {
+    grid-column: var(--col-start, 2) / span var(--col-width);
+  }
+
+  .even-columns > :last-child {
+    grid-column: span var(--col-width) / calc(var(--col-start, 2) * -1);
+  }
+
+  .even-columns_two {
+    --col-width: calc(var(--column-count) / 2);
+  }
+
+  .even-columns_three {
+    --col-width: calc(var(--column-count) / 3);
+  }
+
+  .even-columns_four {
+    --col-width: calc(var(--column-count) / 4);
+  }
+}
+
+@media (width >= 1280px) {
+  .main-grid {
+    --page: calc((var(--page-max-width) - var(--content-max-width)) / 2);
+  }
+}

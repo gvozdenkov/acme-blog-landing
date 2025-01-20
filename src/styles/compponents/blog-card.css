@@ -1,0 +1,35 @@
+.blog-card {
+  display: grid;
+  row-gap: 1rem;
+
+  > img {
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 270 / 200;
+  }
+
+  > h3 {
+    font-size: var(--fs-500);
+    line-height: 1.14;
+  }
+
+  > p {
+    line-height: 1.2;
+  }
+
+  > footer {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1.625rem;
+    font-size: var(--fs-200);
+    color: var(--clr-neutral-400);
+  }
+}
+
+@media (width > 750px) {
+  .blog-card {
+    > img {
+      aspect-ratio: 240 / 200;
+    }
+  }
+}
