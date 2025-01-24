@@ -28,8 +28,12 @@
   --clr-accent-300: #f3f7ff;
   --clr-accent-400: #8ea8da;
 
+  --clr-error-400: #dd4a30;
+
   --spacer: 1rem;
   --border-radius: 1rem;
+
+  --transition: 200ms ease-out;
 }
 
 body {

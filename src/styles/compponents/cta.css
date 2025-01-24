@@ -1,0 +1,18 @@
+.cta {
+  --section-padding: 5rem;
+
+  > form {
+    margin-block-start: 2.5rem;
+  }
+}
+
+.cta__img {
+  grid-column: page;
+  aspect-ratio: 1;
+  object-fit: cover;
+
+  @media (width > 750px) {
+    grid-column: content;
+    aspect-ratio: 800 / 400;
+  }
+}

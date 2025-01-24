@@ -1,0 +1,27 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: transparent;
+  border: none;
+  padding: 0.5em 0;
+  cursor: pointer;
+
+  font-size: 1rem;
+  color: currentColor;
+  text-decoration: none;
+
+  transition: var(--transition);
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+.btn_chevron::after {
+  content: '';
+  width: 16px;
+  height: 16px;
+  mask: no-repeat center / contain url(../../images/chevron--right.svg);
+  background-color: currentColor;
+}

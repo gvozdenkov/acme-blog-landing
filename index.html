@@ -32,7 +32,7 @@
           Lorem ipsum dolor sit amet, consectet adipiscing elit, sed do eiusmod tempor incididunt ut
           labore et dolore magna.
         </p>
-        <a href="#" class="btn">Connect</a>
+        <a href="#" class="btn btn_chevron">Connect</a>
       </div>
     </section>
 
@@ -92,24 +92,34 @@
     </section>
 
     <section class="cta">
-      <div class="">
-        <header class="section-heading ff-accent">
-          <h2 class="">Inbox</h2>
-          <p>Knowledge letters</p>
-        </header>
-        <img src="/images/newsletter.jpg" alt="" class="rounded" />
-        <form class="subscribe-form">
-          <div class="field">
-            <label for="name">Name</label>
-            <input type="text" id="name" placeholder="Your Name" />
-          </div>
-          <div class="field">
-            <label for="email">Email</label>
-            <input type="email" id="email" placeholder="example@domain.com" />
-          </div>
-          <button type="submit" class="btn bold">Subscribe</button>
-        </form>
-      </div>
+      <header class="section-heading ff-accent">
+        <h2 class="">Inbox</h2>
+        <p>Knowledge letters</p>
+      </header>
+
+      <img
+        class="cta__img rounded"
+        src="https://images.unsplash.com/photo-1737395148572-81cbe1693b50?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt=""
+      />
+
+      <form class="form newsletter-form">
+        <div class="newsletter-form__item form-control">
+          <label class="form-control__label" for="name">Name</label>
+          <input type="text" class="form-control__input" id="name" placeholder="Your Name" />
+        </div>
+        <div class="newsletter-form__item form-control">
+          <label class="form-control__label" for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            class="form-control__input"
+            placeholder="example@domain.com"
+            required
+          />
+        </div>
+        <button type="submit" class="btn btn_chevron bold">Subscribe</button>
+      </form>
     </section>
 
     <footer class="primary-footer">
