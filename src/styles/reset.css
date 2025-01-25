@@ -9,8 +9,16 @@ h2,
 h3,
 h4,
 p,
-body {
+body,
+picture {
   margin: 0;
+}
+
+input,
+select,
+textarea,
+button {
+  font: inherit;
 }
 
 h1,
@@ -28,10 +36,16 @@ img {
   display: block;
   height: auto;
   max-width: 100%;
+  border-radius: var(--border-radius);
 }
 
 ul,
 ol {
   list-style: none;
   padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }

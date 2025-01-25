@@ -1,5 +1,5 @@
 .flow-content > * + * {
-  margin-top: var(--flow-gap, var(--spacer));
+  margin-block-start: var(--flow-gap, 1em);
 }
 
 .text-center {
@@ -10,8 +10,8 @@
   font-weight: var(--fw-700);
 }
 
-.ff-accent {
-  font-family: var(--ff-accent);
+.text-accent {
+  font-family: var(--text-accent);
   font-weight: var(--fw-200);
   letter-spacing: -0.02em;
 }
@@ -30,16 +30,21 @@
   --fg: var(--clr-neutral-900);
 }
 
+.bg-dark {
+  --bg: var(--clr-neutral-900);
+  --fg: var(--clr-neutral-100);
+}
+
 .split {
   display: flex;
   flex-flow: column;
-  align-items: center;
   gap: var(--split-gap, calc(var(--spacer) * 3));
 }
 
-@media (width > 960px) {
+@media (width > 750px) {
   .split {
     flex-flow: row;
+    align-items: center;
     justify-content: space-between;
     gap: var(--split-gap, var(--spacer));
 

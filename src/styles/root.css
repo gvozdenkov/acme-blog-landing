@@ -1,7 +1,7 @@
 :root {
   color-scheme: light dark;
   --ff-primary: 'IBM Plex Sans', sans-serif;
-  --ff-accent: 'IBM Plex Serif', serif;
+  --text-accent: 'IBM Plex Serif', serif;
 
   --content-max-width: 800px;
   --article-max-width: 640px;
@@ -16,7 +16,7 @@
   --fw-200: 200;
   --fw-300: 300;
   --fw-400: 400;
-  --fw-700: 700;
+  --fw-700: 600;
 
   --clr-neutral-100: #fff;
   --clr-neutral-200: #eef1f6;
