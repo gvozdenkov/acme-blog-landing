@@ -3,6 +3,19 @@
     url(https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
   min-height: 25vh;
   padding: 2.5rem;
+
+  > .primary-header__title {
+    grid-column: page;
+    grid-row: 1 / -1;
+    place-self: center start;
+    max-width: 12ch;
+  }
+
+  > a {
+    grid-row: 1;
+    grid-column: page;
+    place-self: start;
+  }
 }
 
 .primary-nav {
@@ -38,10 +51,12 @@
 
 @media (width > 700px) {
   .primary-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    align-items: flex-start;
+    > .primary-nav {
+      grid-row: 1;
+      grid-column: page;
+      place-self: start end;
+    }
+
     min-height: 40vh;
   }
 
