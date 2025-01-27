@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <base href="/acme-blog-landing/" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <title>Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;600&family=IBM+Plex+Serif:wght@200;300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/styles/pages/blog.css" />
+  </head>
+  <body class="main-grid">
+    <header class="primary-header | page-width rounded">
+      <a href="index.html" aria-label="home page"><img src="/assets/logo.svg" alt="" /></a>
+      <nav class="primary-nav">
+        <ul class="primary-nav__list">
+          <li><a href="/">Home</a></li>
+          <li class="selected"><a href="blog/">Blog</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="cta | section content-width">
+      <header class="section-heading text-accent">
+        <h2 class="">Inbox</h2>
+        <p>Knowledge letters</p>
+      </header>
+
+      <img
+        class="cta__img"
+        src="https://images.unsplash.com/photo-1737395148572-81cbe1693b50?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt=""
+      />
+
+      <form class="form newsletter-form">
+        <div class="newsletter-form__item form-control">
+          <label class="form-control__label" for="name">Name</label>
+          <input type="text" class="form-control__input" id="name" placeholder="Your Name" />
+        </div>
+        <div class="newsletter-form__item form-control">
+          <label class="form-control__label" for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            class="form-control__input"
+            placeholder="example@domain.com"
+            required
+          />
+        </div>
+        <button type="submit" class="btn btn_chevron bold">Subscribe</button>
+      </form>
+    </section>
+
+    <footer class="primary-footer | section content-width">
+      <div class="split">
+        <a href="index.html" aria-label="home page"><img src="/assets/logo.svg" alt="" /></a>
+
+        <nav class="primary-footer__nav">
+          <div>
+            <h2>Map</h2>
+            <ul>
+              <li><a href="#" class="btn bold">Blog</a></li>
+              <li><a href="#" class="btn bold">Privacy</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Resources</h2>
+            <ul>
+              <li><a href="#" class="btn bold">Cources</a></li>
+              <li><a href="#" class="btn bold">Hacks</a></li>
+              <li><a href="#" class="btn bold">Free stuff</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div class="primary-footer__bottom">
+        <div class="split">
+          <p class="primary-footer__copy">&copy;&nbsp;2020 acme. All rights reserved</p>
+          <ul>
+            <li><a href="#">Tt</a></li>
+            <li><a href="#">Tw</a></li>
+            <li><a href="#">Fb</a></li>
+            <li><a href="#">Li</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

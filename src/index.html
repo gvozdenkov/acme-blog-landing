@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <base href="/acme-blog-landing/" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
@@ -12,15 +13,15 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="/styles/pages/index.css" />
   </head>
   <body class="main-grid">
     <header class="primary-header | page-width rounded">
-      <a href="index.html" aria-label="home page"><img src="./assets/logo.svg" alt="" /></a>
+      <a href="index.html" aria-label="home page"><img src="/assets/logo.svg" alt="" /></a>
       <nav class="primary-nav">
         <ul class="primary-nav__list">
-          <li class="selected"><a href="#">Home</a></li>
-          <li><a href="#">Blog</a></li>
+          <li class="selected"><a href="/">Home</a></li>
+          <li><a href="blog/">Blog</a></li>
         </ul>
       </nav>
     </header>
@@ -130,7 +131,7 @@
 
     <footer class="primary-footer | section content-width">
       <div class="split">
-        <a href="index.html" aria-label="home page"><img src="./assets/logo.svg" alt="" /></a>
+        <a href="index.html" aria-label="home page"><img src="/assets/logo.svg" alt="" /></a>
 
         <nav class="primary-footer__nav">
           <div>

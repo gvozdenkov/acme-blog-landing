@@ -24,12 +24,21 @@
     font-size: var(--fs-200);
     color: var(--clr-neutral-400);
   }
-}
 
-@media (width > 750px) {
-  .blog-card {
+  @container (width > 550px) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr min-content 1fr;
+    gap: 1rem 2.5rem;
+
     > img {
-      aspect-ratio: 240 / 200;
+      aspect-ratio: 240 /200;
+      max-height: 30vh;
+      width: 100%;
+      grid-row: span 3;
+    }
+
+    > *:nth-child(2) {
+      align-self: end;
     }
   }
 }
