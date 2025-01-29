@@ -1,5 +1,5 @@
 .flow-content > * + * {
-  margin-block-start: var(--flow-gap, 1em);
+  margin-block-start: var(--flow-spacer, 1em);
 }
 
 .text-center {

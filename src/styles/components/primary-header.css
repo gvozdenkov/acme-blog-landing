@@ -5,7 +5,7 @@
   padding: 2.5rem;
 
   > .primary-header__title {
-    grid-column: page;
+    grid-column: content;
     grid-row: 1 / -1;
     place-self: center start;
     max-width: 12ch;
@@ -26,6 +26,7 @@
   color: var(--clr-neutral-100);
   background-color: var(--clr-neutral-900);
   position: fixed;
+  z-index: 1000;
   bottom: var(--_nav-gap);
   left: var(--_nav-gap);
   right: var(--_nav-gap);

@@ -34,6 +34,7 @@
   --border-radius: 1rem;
 
   --transition: 200ms ease-out;
+  --transition-l: 500ms ease-out;
 }
 
 body {
@@ -41,6 +42,12 @@ body {
   font-size: var(--fs-400);
   font-weight: var(--fw-400);
   line-height: 1.66;
+}
+
+.random-img,
+.random-title,
+.random-text,
+.random-text-l {
 }
 
 @media (width > 960px) {
