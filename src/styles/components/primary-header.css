@@ -40,13 +40,13 @@
   justify-content: space-evenly;
   margin: 0;
 
-  .selected {
-    font-weight: var(--fw-700);
-  }
-
   a {
     display: block;
     line-height: 1;
+  }
+
+  [aria-current='page'] {
+    font-weight: var(--fw-700);
   }
 }
 
