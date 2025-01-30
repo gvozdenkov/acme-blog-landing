@@ -1,8 +1,19 @@
 .latest-aricles__list {
   display: grid;
-  row-gap: 5rem;
-  grid-template-rows: min-content 1fr min-content;
+  grid-auto-rows: min-content auto auto;
   margin: 0;
+
+  > *:where(:not(:last-of-type)) {
+    margin-block-end: 2rem;
+  }
+
+  > li,
+  li a,
+  li a > * {
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 3;
+  }
 }
 
 @media (width > 750px) {
@@ -13,12 +24,11 @@
   .latest-aricles__list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(239px, 100%), 1fr));
-    grid-auto-rows: 300px auto auto;
+    grid-auto-rows: 150px auto auto;
     gap: 1rem 2.5rem;
 
-    > article {
-      grid-template-rows: subgrid;
-      grid-row: span 3;
+    > * {
+      margin-block-end: 0;
     }
   }
 }

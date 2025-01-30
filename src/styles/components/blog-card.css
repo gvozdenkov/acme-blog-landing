@@ -46,23 +46,4 @@
       scale: 1.1;
     }
   }
-
-  /* @container (inline-size > 400px) {
-    grid-template-columns: min-content 1fr;
-    grid-template-rows: 1fr min-content 1fr;
-    gap: 1rem 1rem;
-
-    > picture {
-      inline-size: max(150px, 15cqi);
-      grid-row: span 3;
-    }
-
-    > p {
-      display: block;
-    }
-
-    > *:nth-child(2) {
-      align-self: end;
-    }
-  } */
 }
